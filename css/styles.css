@@ -29,7 +29,6 @@ body {
 html, body {
   overflow-x: hidden;
   width: 100%;
-  /* iOSのSafariなどで、横揺れを物理的に禁止する魔法の1行 */
   position: relative;
 }
 
