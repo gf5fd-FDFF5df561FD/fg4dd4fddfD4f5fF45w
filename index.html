@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butter Mellow - バターサンドクッキー専門店</title>
+  <meta name="description" content="Butter Mellowはバターサンドクッキー専門店です。" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+
+  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+  <header class="header" id="top">
+    <a href="index.html" class="header-logo">
+      <img src="images/logo.png" alt="Butter Mellow トップページへ" class="header-logo-img">
+    </a>
+
+    <!-- HAMBURGER MENU -->
+    <label for="menu-toggle" class="hamburger-flower" aria-label="メニュー">
+      <svg viewBox="0 0 79 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M21.8925 0.0950981C27.6963 -0.53722 35.2959 2.03745 39.4087 6.21861C39.6155 5.96089 39.7594 5.8193 40.0091 5.60766C44.7893 1.54656 50.997 -0.430532 57.2453 0.118121C63.5016 0.637286 69.2923 3.63049 73.3338 8.43423C77.3975 13.2924 79.3404 19.5788 78.7263 25.8826C78.263 31.1545 75.4716 37.2427 71.4006 40.6624C75.6216 44.5982 77.8404 49.161 78.6279 54.8463C79.4162 60.9687 77.7748 67.1563 74.0558 72.0832C70.4247 76.8932 64.6994 80.2399 58.766 81.0836C58.4589 81.1273 58.153 81.175 57.8456 81.218C51.8633 81.9969 43.6327 79.6031 39.3924 75.1804C35.8833 78.6492 30.2127 80.9203 25.3191 81.2727C19.0804 81.7672 12.9031 79.7453 8.16406 75.6581C4.77154 72.7153 2.27358 69.0254 0.962522 64.711C0.416788 62.9152 -0.0207552 61.4556 0.0202073 59.5295C0.0577245 57.7655 -0.0903755 55.9535 0.145678 54.1921C0.804733 50.4333 2.36588 46.6467 4.66634 43.5941C5.29826 42.7566 6.02152 41.9602 6.70413 41.175L6.65659 40.2202C6.36915 39.7088 4.83143 38.006 4.29464 37.2584C2.24714 34.4066 0.436022 30.0197 0.0735581 26.5184C-0.0383403 25.4376 -0.0293185 20.9719 0.147403 19.9317C0.882022 15.6074 2.85199 11.4333 5.70394 8.12275C9.8239 3.40837 15.6461 0.521239 21.8925 0.0950981Z"
+          fill="#764E2A" />
+        <path
+          d="M24.7507 37.5909C25.4288 37.5018 27.9026 37.5538 28.7479 37.5537L37.128 37.5553L48.139 37.554C50.0149 37.5543 52.4145 37.4662 54.2354 37.6313C57.8121 37.9558 58.2354 43.2771 54.0264 43.7881C52.5729 43.8627 50.8055 43.8189 49.335 43.8186L41.1211 43.8177L30.8427 43.8195C29.4382 43.8193 24.6709 43.9894 23.6214 43.5583C20.7276 42.3698 20.9282 38.0554 24.7507 37.5909Z"
+          fill="white" />
+        <path
+          d="M24.3881 49.4552C25.9495 49.3345 28.2906 49.4029 29.906 49.4035L39.844 49.4065L49.0063 49.4027C50.7982 49.4022 54.4745 49.0983 55.9095 50.0805C57.8538 51.4112 57.1638 55.1342 54.5673 55.5414C53.1111 55.6445 50.9858 55.5825 49.4898 55.5831L40.1883 55.5859L30.0646 55.5867C28.1959 55.5865 25.6648 55.6819 23.7996 55.4459C23.0945 55.3567 21.9763 54.2316 21.8216 53.4435C21.3854 51.2213 22.1772 50.0055 24.3881 49.4552Z"
+          fill="white" />
+        <path
+          d="M23.9354 25.853C25.7105 25.7941 27.7436 25.838 29.5351 25.8378L39.768 25.835L49.4548 25.8347C50.441 25.8349 54.4925 25.7349 55.0502 25.967C55.8529 26.2972 56.4909 26.9336 56.8231 27.7354C57.1489 28.5323 57.1592 29.213 56.8339 29.981C56.2939 31.2557 55.9593 31.3294 54.7667 31.8288C53.9513 32.0234 51.8561 31.9648 50.9348 31.9648L44.8146 31.9649L31.8383 31.9634C29.5308 31.9631 26.0281 32.1222 23.6769 31.7493C23.029 31.5031 22.1785 30.8927 21.9548 30.2411C21.2252 28.1158 22.0044 26.6891 23.9354 25.853Z"
+          fill="white" />
+      </svg>
+      <span class="cross-line"></span>
+    </label>
+  </header>
+
+  <!-- SLIDE-OUT NAV -->
+  <nav class="nav-drawer" aria-label="Main navigation">
+    <label for="menu-toggle" class="nav-overlay"></label>
+    <div class="nav-panel">
+      <ul class="nav-list">
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#sec-feature">FEATURE</a></li>
+        <li><a href="#sec-products">PRODUCTS</a></li>
+        <li><a href="#sec-shop">SHOP</a></li>
+        <li><a href="#sec-news">NEWS</a></li>
+      </ul>
+      <div class="nav-footer">
+        <!-- SNSアイコン -->
+        <div class="footer-sns">
+          <a href="#" aria-label="Instagram">
+            <img src="images/icon-instagram.png" alt="Instagram" class="footer-sns-img">
+          </a>
+          <a href="#" aria-label="X">
+            <img src="images/icon-x.png" alt="Twitter" class="footer-sns-img">
+          </a>
+        </div>
+
+        <!-- お問い合わせボタン -->
+        <a href="#" class="footer-contact-btn">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <h1 class="hero-title">Butter Mellow</h1>
+
+      <div class="hero-right">
+        <div id="dot-left" class="bg-dot" aria-hidden="true">
+          <img src="images/circle.png" alt="">
+        </div>
+
+        <img src="images/cookie-hero.png" alt="Butter Mellowのバターサンドクッキー">
+      </div>
+
+      <div class="hero-left">
+
+        <div class="hero-online-shop">
+          <a href="#">
+            <img src="images/online-shop-badge.png" alt="Online Shop">
+          </a>
+        </div>
+
+        <p class="hero-sub">Butter Sand Cookies</p>
+        <p class="hero-sub-jp">バターサンドクッキー専門店</p>
+
+        <p class="hero-description">
+          Delicate butter cookies sandwiched with smooth, rich butter cream.<br>
+          A simple pleasure, crafted with care and quality ingredients.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="dot-right" class="bg-dot-bottom-right" aria-hidden="true">
+    <img src="images/circle2.png" alt="">
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about fade-in-up">
+
+    <div class="about-inner">
+      <div class="about-left">
+        <div class="about-arc" aria-hidden="true"></div>
+        <img src="images/about-photo.png" alt="" class="about-img">
+      </div>
+      <div class="about-right">
+        <h2 class="about-heading">余白のある甘さ。</h2>
+        <p class="about-body">
+          忙しい毎日の中でふと手をとめて、<br>
+          ひとくちのお菓子で心がほどけていく——<br>
+          そんな「余白」のような時間を届けたくて、<br>
+          Butter Mellowは生まれました。
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FEATURE -->
+  <section id="sec-feature" class="feature fade-in-up">
+    <div class="feature-side-text" aria-hidden="true">FEATURE</div>
+    <div class="feature-inner">
+      <h2 class="sec-title">FEATURE</h2>
+      <p class="sec-sub">&mdash; やさしい味わいの、その裏側に。 &mdash;</p>
+      <div class="sec-line"></div>
+      <div class="feature-grid">
+
+        <div class="feature-item">
+          <div class="feature-arch" aria-hidden="true"></div>
+          <div class="feature-item-content">
+            <h3 class="feature-name">軽やかなバター</h3>
+            <div class="feature-icon">
+              <img src="images/feature-photo1.png" alt="バター" class="feature-img">
+            </div>
+            <p class="feature-desc">
+              ふわっと軽く、<br>
+              やさしくほどける。
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-arch" aria-hidden="true"></div>
+          <div class="feature-item-content">
+            <h3 class="feature-name">甘さひかえめ</h3>
+            <div class="feature-icon">
+              <img src="images/feature-photo2.png" alt="砂糖" class="feature-img">
+            </div>
+            <p class="feature-desc">
+              甘さは控えめに、<br>
+              余韻だけを残す。
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-arch" aria-hidden="true"></div>
+          <div class="feature-item-content">
+            <h3 class="feature-name">上質な素材</h3>
+            <div class="feature-icon">
+              <img src="images/feature-photo3.png" alt="小麦" class="feature-img">
+            </div>
+            <p class="feature-desc">
+              選び抜いた素材を、<br>
+              ていねいに仕立てる。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="sec-products" class="products fade-in-up">
+    <div class="products-stack">
+
+      <!-- Plain (includes PRODUCTS heading) -->
+      <div class="prod-panel prod-panel--1">
+        <div class="prod-card">
+          <div class="prod-shape prod-shape--plain" aria-hidden="true"></div>
+          <div class="prod-side-text prod-side-text--right" aria-hidden="true">PRODUCTS</div>
+          <div class="prod-card-body">
+            <div class="products-head">
+              <h2 class="sec-title">PRODUCTS</h2>
+              <p class="sec-sub">&mdash; Butter Mellowのバターサンド、4つのフレーバー &mdash;</p>
+              <div class="sec-line"></div>
+            </div>
+            <div class="prod-content">
+              <div class="prod-img">
+                <img src="images/cookie-plain.svg" alt="プレーン バターサンド">
+              </div>
+              <div class="prod-info">
+                <h3 class="prod-name">Plain</h3>
+                <p class="subtitle">プレーン</p>
+                <p class="prod-desc">
+                  バターの豊かな風味が広がる、<br>
+                  一番人気の定番フレーバー。<br>
+                  シンプルだからこそ素材の良さが<br>
+                  際立つ、王道の一品。
+                </p>
+                <p class="prod-price">単品 &yen;350 / 6個入り &yen;2,000</p>
+                <a href="#" class="online-button">Online Shop →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strawberry -->
+      <div class="prod-panel prod-panel--2 ">
+        <div class="prod-card">
+          <div class="prod-shape prod-shape--straw" aria-hidden="true"></div>
+          <div class="prod-side-text prod-side-text--left" aria-hidden="true">PRODUCTS</div>
+          <div class="prod-card-body">
+            <div class="prod-content">
+              <div class="prod-img">
+                <img src="images/cookie-strawberry.svg" alt="ストロベリー バターサンド">
+              </div>
+              <div class="prod-info">
+                <h3 class="prod-name">Strawberry</h3>
+                <p class="subtitle">ストロベリー</p>
+                <p class="prod-desc">
+                  甘酸っぱいストロベリーと<br>
+                  バターの甘みが織りなす、<br>
+                  華やかなハーモニー。
+                </p>
+                <p class="prod-price">単品 &yen;380 / 6個入り &yen;2,200</p>
+                <a href="#" class="online-button">Online Shop →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chocolate -->
+      <div class="prod-panel prod-panel--3">
+        <div class="prod-card">
+          <div class="prod-shape prod-shape--choco" aria-hidden="true"></div>
+          <div class="prod-side-text prod-side-text--right" aria-hidden="true">PRODUCTS</div>
+          <div class="prod-card-body">
+            <div class="prod-content">
+              <div class="prod-img">
+                <img src="images/cookie-chocolate.svg" alt="チョコレート バターサンド">
+              </div>
+              <div class="prod-info">
+                <h3 class="prod-name">Chocolate</h3>
+                <p class="subtitle">チョコレート</p>
+                <p class="prod-desc">
+                  ベルギー産クーベルチュールを<br>
+                  使った濃厚なチョコレート。<br>
+                  ほろ苦い大人の味わい。
+                </p>
+                <p class="prod-price">単品 &yen;380 / 6個入り &yen;2,200</p>
+                <a href="#" class="online-button">Online Shop →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matcha -->
+      <div class="prod-panel prod-panel--4">
+        <div class="prod-card">
+          <div class="prod-shape prod-shape--matcha" aria-hidden="true"></div>
+          <div class="prod-side-text prod-side-text--left" aria-hidden="true">PRODUCTS</div>
+          <div class="prod-card-body">
+            <div class="prod-content">
+              <div class="prod-img">
+                <img src="images/cookie-matcha.svg" alt="抹茶 バターサンド">
+              </div>
+              <div class="prod-info">
+                <h3 class="prod-name">Matcha</h3>
+                <p class="subtitle">抹茶</p>
+                <p class="prod-desc">
+                  宇治抹茶の上品な苦みと<br>
+                  バタークリームの甘さが<br>
+                  絶妙にマッチ。
+                </p>
+                <p class="prod-price">単品 &yen;400 / 6個入り &yen;2,400</p>
+                <a href="#" class="online-button">Online Shop →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="sec-shop" class="shop fade-in-up">
+    <div class="shop-inner">
+      <h2 class="sec-title">SHOP</h2>
+      <p class="sec-sub">&mdash; 店舗情報 &mdash;</p>
+      <div class="sec-line"></div>
+
+      <div class="shop-grid">
+        <div class="shop-info">
+
+          <div class="shop-address-group">
+            <p class="shop-text">〒100-0005</p>
+            <p class="shop-text">東京都千代田区丸の内1-9-1</p>
+            <p class="shop-text">（駅構内 1F）</p>
+          </div>
+
+          <div class="shop-time-group">
+            <p class="shop-text">営業時間：</p>
+            <p class="shop-text">毎日 10:00 - 19:00（百貨店に準ずる）</p>
+          </div>
+
+          <a href="#" class="btn-map-link">
+            <span class="btn-map">Google Map</span>
+          </a>
+        </div>
+
+        <div class="shop-map-area">
+          <div class="map-container">
+            <img src="images/floor-map.png" alt="フロアマップ" class="shop-map-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-wide-photo">
+      <img src="images/shop-interior-wide.png" alt="店舗内観">
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="sec-news" class="news fade-in-up">
+    <div class="news-inner">
+      <h2 class="sec-title sec-title--lower">news</h2>
+      <p class="sec-sub">&mdash; ニュース &mdash;</p>
+      <div class="sec-line"></div>
+      <div class="news-grid">
+        <article class="news-card">
+          <img src="images/news1.png" alt="新商品のお知らせ" class="news-card-img">
+          <div class="news-card-body">
+            <time datetime="2026-02-14">2026.02.14</time>
+            <h3>季節限定フレーバー「苺ミルク」が登場</h3>
+          </div>
+        </article>
+        <article class="news-card">
+          <img src="images/news2.png" alt="オンライン限定の特別セット" class="news-card-img">
+          <div class="news-card-body">
+            <time datetime="2025-01-20">2025.01.20</time>
+            <h3>自宅で楽しむオンライン限定の、特別セット販売開始</h3>
+          </div>
+        </article>
+        <article class="news-card">
+          <img src="images/news3.png" alt="東京駅に新ショップオープン" class="news-card-img">
+          <div class="news-card-body">
+            <time datetime="2024-12-15">2024.12.15</time>
+            <h3>東京駅に新ショップオープン！お土産選びがさらに便利に</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOVIE -->
+  <section class="movie-section fade-in-up">
+    <div class="movie-wrapper">
+      <img src="images/wheat-field.jpg" alt="" class="movie-poster">
+      <button class="movie-play" aria-label="動画を再生">
+        <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
+          <circle cx="24" cy="24" r="23" stroke="rgba(255,255,255,0.8)" stroke-width="2" />
+          <polygon points="19,14 36,24 19,34" fill="rgba(255,255,255,0.9)" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Butter Mellow トップページへ" class="footer-logo-img">
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-sns">
+          <a href="#" aria-label="Instagram">
+            <img src="images/icon-instagram.png" alt="Instagram" class="footer-sns-img">
+          </a>
+          <a href="#" aria-label="X">
+            <img src="images/icon-x.png" alt="Twitter" class="footer-sns-img">
+          </a>
+        </div>
+
+        <a href="#" class="footer-contact-btn">お問い合わせ</a>
+      </div>
+
+      <a href="#top" class="scroll-top" aria-label="ページトップへ">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+          <path d="M18 15l-6-6-6 6" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <small class="footer-copy">&copy; Butter Mellow CO.,LTD.</small>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
