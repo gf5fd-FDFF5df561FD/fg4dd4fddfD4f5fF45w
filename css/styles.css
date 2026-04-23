@@ -23,13 +23,6 @@ body {
   background: #faf8f5;
   line-height: 1.8;
   overflow-x: hidden;
-  touch-action: pan-y;
-}
-
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
 }
 
 
@@ -1362,7 +1355,7 @@ ul {
   /* 右下の位置調整 */
   .bg-dot-bottom-right {
     bottom: 5%;
-    right: -3vw;
+    right: 0vw;
     z-index: 10;
   }
 
@@ -1421,7 +1414,7 @@ ul {
   .hero {
     height: auto;
     min-height: 85vh;
-    padding: 80px 0 0px;
+    padding: 80px 0 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1644,22 +1637,30 @@ ul {
   }
 
   .products .prod-panel {
-    height: 100vh;
+    min-height: 100vh; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
-  .products .prod-card {
-    height: 100vh;
+ .products .prod-card {
+    min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    padding: 60px 0; /* 上下にしっかり余白を作る */
   }
 
   .products .prod-shape {
+    position: absolute;
     height: 100%;
-    width: 120%;
-    left: -10%;
-    bottom: -5%;
-    border-radius: 50% 50% 0 0 / 15% 15% 0 0;
+    width: 140%; /* 少し広げてゆとりを持たせる */
+    left: -20%;
+    bottom: 0;
+    border-radius: 50% 50% 0 0 / 10% 10% 0 0;
+    z-index: 1;
   }
 
   .products .prod-side-text {
@@ -1673,10 +1674,8 @@ ul {
 
   .products .prod-card-body {
     position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
+    width: 100%;
+    max-width: 340px; /* 横幅を制限して中央に寄せる */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -1698,8 +1697,10 @@ ul {
 
   .products .prod-img {
     flex: none;
-    width: 280px; 
-    height: 280px;
+    width: 70vw;      /* 画面幅に合わせて可変にする */
+    max-width: 260px; /* 大きくなりすぎないように制限 */
+    aspect-ratio: 1 / 1; /* 正方形を維持 */
+    margin-bottom: 20px;
   }
 
   .products .prod-img img {
@@ -1714,8 +1715,8 @@ ul {
   }
 
   .products .prod-name {
-    font-size: 1.6rem;
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
   }
 
   .products .prod-desc {
