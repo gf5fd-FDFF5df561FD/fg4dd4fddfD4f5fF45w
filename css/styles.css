@@ -878,18 +878,40 @@ ul {
 }
 
 .prod-panel--1 .prod-card-body {
-  justify-content: flex-start; /* 中央寄せではなく上寄配置にする */
-  padding-top: 20px;          /* 画面上端との隙間を最小限に */
+  padding-top: 10px;          /* 上の余白をさらに詰め、位置を上げる */
+  justify-content: flex-start; /* 上詰めを維持 */
 }
 
-/* 1枚目の見出しとコンテンツの間をグッと詰める */
+/* 「PRODUCTS」見出し自体の高さを圧縮 */
 .prod-panel--1 .products-head {
-  margin-bottom: 0; 
+  height: auto;               /* 固定高さを解除 */
+  margin-bottom: 5px;         /* 下との隙間を極限まで減らす */
 }
 
 /* 1枚目の画像を含む中身をさらに上に引っ張り上げる */
 .prod-panel--1 .prod-content {
   margin-top: -20px; /* ネガティブマージンでさらに上へ */
+}
+
+.prod-panel--1 .sec-title {
+  margin-top: 0;
+  line-height: 1;             /* 文字自体の上下の余白をカット */
+}
+
+/* サブタイトルの上下の隙間も調整 */
+.prod-panel--1 .sec-sub {
+  margin: 5px 0;
+  font-size: 0.6rem;
+}
+
+/* 見出し下の線を少し上に */
+.prod-panel--1 .sec-line {
+  margin: 5px auto 10px;
+}
+
+/* プレーンの画像と説明文の塊をさらに上に */
+.prod-panel--1 .prod-content {
+  margin-top: 0;              /* 他でマイナスにしている場合は調整 */
 }
 
 /* ========================================
