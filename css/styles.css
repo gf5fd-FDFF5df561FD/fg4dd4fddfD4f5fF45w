@@ -800,8 +800,7 @@ ul {
 }
 
 .prod-img {
-  flex: 0 0 390px;
-  height: 390px;
+  margin-top: 0 !important;
 }
 
 .prod-img img {
@@ -876,6 +875,21 @@ ul {
 
 .prod-link:hover {
   color: #5a4a3a;
+}
+
+.prod-panel--1 .prod-card-body {
+  justify-content: flex-start; /* 中央寄せではなく上寄配置にする */
+  padding-top: 20px;          /* 画面上端との隙間を最小限に */
+}
+
+/* 1枚目の見出しとコンテンツの間をグッと詰める */
+.prod-panel--1 .products-head {
+  margin-bottom: 0; 
+}
+
+/* 1枚目の画像を含む中身をさらに上に引っ張り上げる */
+.prod-panel--1 .prod-content {
+  margin-top: -20px; /* ネガティブマージンでさらに上へ */
 }
 
 /* ========================================
@@ -1684,23 +1698,20 @@ ul {
   }
 
   .products .products-head {
-    height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 5px; /* 下との隙間を最小限に */
   }
 
+  /* 2. 画像を含むコンテンツ全体の配置 */
   .products .prod-content {
-    margin-top: 0;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+    margin-top: 0px; /* 全体を少し上に持ち上げる */
+    gap: 8px;          /* 画像と説明文の間の隙間をギュッと詰める */
   }
 
+  /* 3. バターサンドの画像を少し小さくして上に寄せる */
   .products .prod-img {
-    flex: none;
-    width: 70vw;      /* 画面幅に合わせて可変にする */
-    max-width: 260px; /* 大きくなりすぎないように制限 */
-    aspect-ratio: 1 / 1; /* 正方形を維持 */
-    margin-bottom: 20px;
+    width: 55vw;       /* 70vwから55vwへ。少し小さくしてスペースを確保 */
+    max-width: 200px;
+    margin-bottom: 5px; /* 画像下の余白を削る */
   }
 
   .products .prod-img img {
@@ -1715,25 +1726,26 @@ ul {
   }
 
   .products .prod-name {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+    font-size: 1.3rem;
+    margin-bottom: 2px; /* 味の名前の下の隙間 */
+  }
+
+  .products .subtitle {
+    margin-bottom: 8px; /* カタカナ表記の下の隙間 */
   }
 
   .products .prod-desc {
-    font-size: 0.75rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    max-width: 280px;
+    font-size: 0.72rem;
+    line-height: 1.6;   /* 行間を少し詰め、読みやすさとコンパクトさを両立 */
+    margin-bottom: 8px; /* 説明文と価格の間の隙間 */
   }
 
-  .products .prod-price {
-    font-size: 0.7rem;
+ .products .prod-price {
+    margin-bottom: 5px;
   }
 
   .products .online-button {
-    margin-top: 10px;
-    padding: 0.6rem 1.8rem;
-    font-size: 0.75rem;
+    margin-top: 5px;    /* ボタンの上の余白を最小限に */
   }
 
   .prod-panel {
